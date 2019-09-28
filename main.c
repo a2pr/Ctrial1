@@ -104,7 +104,7 @@ int i, menor=0, pos;
 for(i=0;i<=contaCount-1; i++){
         if(menor==0){
             menor= contaList[i].saldo;
-        }else if(menor<contaList[i].saldo){
+        }else if(contaList[i].saldo< menor){
             menor= contaList[i].saldo;
             pos=i;
         }
